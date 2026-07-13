@@ -3,7 +3,7 @@
 ![BridgePoint](https://img.shields.io/badge/BridgePoint-Africa%20Europa-C9A227?style=flat-square&labelColor=0A1520)
 ![Version](https://img.shields.io/badge/Portal-v1.0-green?style=flat-square&labelColor=0A1520)
 ![Host](https://img.shields.io/badge/Host-GitHub%20Pages-blue?style=flat-square&labelColor=0A1520)
-![Domain](https://img.shields.io/badge/Domain-projects.bridgepointafricaeuropa.com-C9A227?style=flat-square&labelColor=0A1520)
+![Domain](https://img.shields.io/badge/Domain-projects.bridgepointafreuropa.com-C9A227?style=flat-square&labelColor=0A1520)
 
 ---
 
@@ -14,7 +14,7 @@
 Este repositório aloja o **BridgePoint Project Portal** — a infraestrutura central para todos os dashboards PMO de projetos BridgePoint Africa Europa.
 
 ```
-projects.bridgepointafricaeuropa.com
+projects.bridgepointafreuropa.com
 /
 ├── index.html                    ← Página de entrada (sem listagem de projetos)
 │

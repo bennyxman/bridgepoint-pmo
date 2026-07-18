@@ -1,0 +1,43 @@
+/* ═══════════════════════════════════════════════════════════
+   BridgePoint Africa Europa — shared design tokens & base styles
+   Phase 1 (PIOS roadmap): extracted from duplicated inline
+   <style> blocks. Only declarations verified byte-identical (or
+   safely decomposable into an identical shared subset with the
+   remaining, page-specific values kept local) across two or more
+   pages live here. Each page's own <style> block still carries
+   whatever differs from this baseline (sizes, spacing, colors
+   that are genuinely unique to that page) — see the repository
+   assessment / phase reports for the full breakdown of what was
+   intentionally left page-local and why.
+   ═══════════════════════════════════════════════════════════ */
+
+:root{
+  --navy:#0A1520;--navy2:#0F1E2E;--navy3:#142030;--navy4:#1A2D40;
+  --gold:#C9A227;--gold3:#E8C547;
+  --white:#FFFFFF;--muted:#7A9BBC;--light:#DDEAF7;--text:#E8F0F8;
+  --green:#2ECC71;--amber:#F39C12;--red:#E74C3C;--blue:#3498DB;
+  --border:rgba(201,162,39,0.2);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--navy);color:var(--text);min-height:100vh}
+
+/* ── "Access card" family — root portal + coming-soon pages ──
+   Sizing (max-width, gap, font-size, margins, width/height of the
+   logo, etc.) differs per page and stays in each page's own
+   <style> block; only the identical declarations live here. */
+.card{background:var(--navy2);border:.5px solid rgba(201,162,39,.25);border-top:2px solid var(--gold);border-radius:8px;padding:40px 48px;width:100%;text-align:center}
+.brand-row{display:flex;align-items:center;justify-content:center}
+.logo-img{object-fit:contain;border-radius:50%;border:1.5px solid var(--gold);background:var(--navy);flex-shrink:0}
+.brand-text{text-align:left}
+.brand-name{font-weight:700;color:var(--white);line-height:1.2}
+.brand-sub{color:var(--gold);letter-spacing:3px}
+.divider{height:1px;background:var(--gold);opacity:.4;margin-top:0;margin-left:auto;margin-right:auto}
+
+/* ── Language toggle — root portal + Jardins de Leiria dashboard ──
+   Padding and the toggle's own border differ per page (dashboard
+   header vs. standalone card) and stay local. */
+.lang-toggle{display:flex;border-radius:4px;overflow:hidden}
+.lang-btn{background:transparent;border:none;font-size:10px;font-weight:700;cursor:pointer;color:var(--muted);letter-spacing:1px;transition:all .2s}
+.lang-btn.active{background:var(--gold);color:var(--navy)}
